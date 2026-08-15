@@ -1,0 +1,9 @@
+services:
+  trove:
+    build: .
+    image: trove:latest
+    env_file: .env
+    restart: unless-stopped
+    # Persist the watchlist data (a JSON store under DATA_DIR) across restarts
+    volumes:
+      - ./data:/app/data

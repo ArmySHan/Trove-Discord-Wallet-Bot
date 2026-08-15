@@ -1,0 +1,56 @@
+{
+  "name": "trove",
+  "version": "1.0.0",
+  "description": "A free, open-source Discord bot that shows any wallet's full on-chain portfolio (EVM, Bitcoin, Solana) from one slash command.",
+  "keywords": [
+    "discord-bot",
+    "discord.js",
+    "crypto",
+    "cryptocurrency",
+    "portfolio",
+    "wallet",
+    "ethereum",
+    "bitcoin",
+    "solana",
+    "defi",
+    "web3",
+    "multichain",
+    "typescript",
+    "self-hosted"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "register": "tsx src/discord/register.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "p-limit": "^7.3.0",
+    "pino": "^9.5.0",
+    "tsx": "^4.19.2",
+    "viem": "^2.52.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.9.1",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "pino-pretty": "^13.0.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.15.0",
+    "vitest": "^4.1.8"
+  },
+  "license": "MIT"
+}
